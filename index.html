@@ -35,18 +35,57 @@
         // console.log(h1)
         // ReactDOM.render(h1, root) 
 
-        // Exo2B  
-        const root = document.getElementById('root')
+         
+        // const root = document.getElementById('root')
         
-        const Template = (
-            <main>
-                <section>
-                    <h1>Hello world</h1>
-                </section>
-            </main>        
-        ) 
+        // const Template = (
+        //     <main>
+        //         <section>
+        //             <h1>Hello world</h1>
+        //         </section>
+        //     </main>        
+        // ) 
 
-        ReactDOM.render(Template, root)
+
+        // Exo3
+        const root = document.getElementById('root')
+
+        const MyCompo = function (props) {
+            return (
+                <section>
+                    <h1>{props.data}</h1>
+                </section>
+            )
+        }
+
+    // Autres façons d'écrire le composant
+    // const MyCompo =  () =>
+    //          (
+    //             <section>
+    //                 <h1>{title}</h1>
+    //             </section>
+    //         )
+
+    // function MyCompo  () {
+    //     return (
+    //         <section>
+    //             <h1>{title}</h1>
+    //         </section>
+    //         )
+    //     }        
+
+function Template  (){
+    const title = "Hello world"
+    return (
+        <main>
+            <MyCompo data = {title}/>
+        </main>  
+    )      
+} 
+        // const div = React.createElement('div', null, React.createElement('section', null, React.createElement('h1', null, "Hella warld")))
+
+
+        ReactDOM.render(<Template />, root)
 
 
     </script>
