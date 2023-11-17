@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        //Exo1A
+        // const root = document.getElementById('root')
+        // let h1 = document.createElement('h1')
+        // h1.innerText = 'Coucou tout le monde'
+        // root.appendChild(h1)
+        // console.log(root)
+
+        // Exo1B    
+        // const root = document.getElementById('root')
+        // let h1 = React.createElement('h1', null, 'Coucou tout le monde')
+        // console.log(React.createElement)
+
+        // ReactDOM.render(h1, root)
+
+        // Exo2A   
+        // const root = document.getElementById('root')
+        // const p = React.createElement('p', {children: 'Ceci est un paragraphe'})
+        // let h1 = React.createElement('h1',  
+        //                                 {children: p , nimporteKoi: "Test"}
+        //                             )
+        // console.log(h1)
+        // ReactDOM.render(h1, root) 
+
+        // Exo2B  
+        const root = document.getElementById('root')
+        
+        const Template = (
+            <main>
+                <section>
+                    <h1>Hello world</h1>
+                </section>
+            </main>        
+        ) 
+
+        ReactDOM.render(Template, root)
+
+
+    </script>
+</body>
+</html>
